@@ -1,16 +1,48 @@
-# React + Vite
+# 🍽️ Hours Restaurant
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern restaurant website built with React, Vite, and Tailwind CSS.
 
-Currently, two official plugins are available:
+## 🌐 Live Demo
+👉 [hours-restaurant.vercel.app](https://hours-restaurant.vercel.app)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 📸 Preview
 
-## React Compiler
+![Home](./public/preview-home.png)
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## ✨ Features
 
-## Expanding the ESLint configuration
+- Responsive design (mobile & desktop)
+- Multi-page navigation with React Router
+- Interactive menu with food items & prices
+- Contact page with address & opening hours
+- Dark theme UI
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🛠️ Tech Stack
+
+- **React** — UI library
+- **Vite** — Build tool
+- **Tailwind CSS** — Styling
+- **React Router DOM** — Navigation
+
+## 🚀 Getting Started
+
+```bash
+git clone https://github.com/1hafsa/HOURS-RESTAURANT.git
+cd HOURS-RESTAURANT
+npm install
+npm run dev
+```
+
+## 📁 Project Structure
+
+```
+src/
+├── Components/
+│   └── Navbar.jsx
+├── Pages/
+│   ├── Home.jsx
+│   ├── Menu.jsx
+│   ├── About.jsx
+│   └── Contact.jsx
+└── App.jsx
+```
