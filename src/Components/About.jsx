@@ -13,8 +13,8 @@ function About() {
 
       {/* Text */}
       <div className="max-w-3xl text-center mb-12">
-        <h2 className="text-3xl md:text-4xl font-bold mb-6">About Us</h2>
-        <p className="text-gray-300 leading-relaxed text-lg">
+        <h2 className="text-3xl text-gray-600 dark:text-gray-300 md:text-4xl font-bold mb-6">About Us</h2>
+        <p className="text-gray-600 dark:text-gray-300 leading-relaxed text-lg">
           Welcome to Hours, where great food meets a warm and welcoming atmosphere.
           We believe that every meal should be a memorable experience. Our chefs use fresh,
           high-quality ingredients to create delicious dishes that satisfy every taste.
@@ -23,19 +23,19 @@ function About() {
         </p>
       </div>
 
-      {/* Stats */}
+      
       <div className="grid grid-cols-3 gap-6 w-full max-w-2xl text-center">
-        <div className="bg-white/5 rounded-2xl p-6">
+        <div className="bg-gray-100 dark:bg-white/5 rounded-2xl p-6">
           <p className="text-3xl font-bold text-red-400">50+</p>
-          <p className="text-gray-400 text-sm mt-1">Menu Items</p>
+          <p className="text-gray-500 dark:text-gray-400 text-sm mt-1">Menu Items</p>
         </div>
-        <div className="bg-white/5 rounded-2xl p-6">
+        <div className="bg-gray-100 dark:bg-white/5 rounded-2xl p-6">
           <p className="text-3xl font-bold text-red-400">5k+</p>
-          <p className="text-gray-400 text-sm mt-1">Happy Clients</p>
+          <p className="text-gray-500 dark:text-gray-400 text-sm mt-1">Happy Clients</p>
         </div>
-        <div className="bg-white/5 rounded-2xl p-6">
+        <div className="bg-gray-100 dark:bg-white/5 rounded-2xl p-6">
           <p className="text-3xl font-bold text-red-400">3+</p>
-          <p className="text-gray-400 text-sm mt-1">Years Open</p>
+          <p className="text-gray-500 dark:text-gray-400 text-sm mt-1">Years Open</p>
         </div>
       </div>
 
