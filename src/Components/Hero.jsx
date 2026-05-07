@@ -15,7 +15,7 @@ function Hero() {
 
     return (<>
         <main
-            className="relative flex justify-center items-center bg-cover bg-center bg-no-repeat h-screen"
+            className="relative flex justify-center items-center bg-cover bg-center bg-no-repeat h-[calc(100vh-64px)]"
             style={{ backgroundImage: `url(${bg})` }}
         >
             <div className="absolute inset-0 bg-black/50 md:bg-black/60"></div>
