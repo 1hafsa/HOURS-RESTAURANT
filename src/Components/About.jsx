@@ -1,5 +1,6 @@
+import PageWrapper from "../Components/PageWrapper";
 function About() {
-  return (
+  return (<PageWrapper>
     <section className="min-h-screen flex flex-col items-center justify-center px-6 py-16">
       
       {/* Hero Image */}
@@ -39,7 +40,7 @@ function About() {
         </div>
       </div>
 
-    </section>
+    </section></PageWrapper>
   );
 }
 

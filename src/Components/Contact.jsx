@@ -1,5 +1,5 @@
 import { useState } from 'react';
-
+import PageWrapper from "../Components/PageWrapper";
 function Contact() {
   const [submitted, setSubmitted] = useState(false);
   const [form, setForm] = useState({ name: '', email: '', guests: '2', date: '' });
@@ -11,7 +11,7 @@ function Contact() {
     setSubmitted(true);
   };
 
-  return (
+  return (<PageWrapper>
     <section className="min-h-screen flex flex-col items-center px-6 py-16 gap-12">
       
       <h2 className="text-3xl  text-gray-600 dark:text-gray-300 md:text-4xl font-bold">Contact Us</h2>
@@ -113,7 +113,7 @@ function Contact() {
 
       </div>
     </section>
-  );
+  </PageWrapper>);
 }
 
 export default Contact;

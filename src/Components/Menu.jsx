@@ -6,6 +6,7 @@ import pizza from '../assets/pizza.jpg'
 import salad from '../assets/salad.jpg'
 import cake from '../assets/cake.jpg'
 import { useState } from "react";
+import PageWrapper from "../Components/PageWrapper";
 function Menu (){
     const menuItems = [
   {
@@ -51,7 +52,7 @@ function Menu (){
 const categories = ['All', 'Burgers', 'Chicken', 'Pasta', 'Pizza', 'Salad', 'Cake'];
 const [filter, setFilter] = useState('All');
 const filtered = filter === 'All' ? menuItems : menuItems.filter(i => i.category === filter);
-    return(<>
+    return(<PageWrapper>
       <div className="flex flex-wrap gap-3 justify-center pt-8 px-4">
         {categories.map(cat => (
           <button
@@ -71,7 +72,7 @@ const filtered = filter === 'All' ? menuItems : menuItems.filter(i => i.category
      <div className="grid  grid-cols-1 md:grid-cols-3 gap-8 p-8">
       
         {filtered.map((e,index)=><Card key={index} img={e.img} name={e.name} price={e.price} desc={e.desc}/>)}
-        </div></>
+        </div></PageWrapper>
        
     );
 };
