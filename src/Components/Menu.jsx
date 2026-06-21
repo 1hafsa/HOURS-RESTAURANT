@@ -71,7 +71,7 @@ const filtered = filter === 'All' ? menuItems : menuItems.filter(i => i.category
      
      <div className="grid  grid-cols-1 md:grid-cols-3 gap-8 p-8">
       
-        {filtered.map((e,index)=><Card key={index} img={e.img} name={e.name} price={e.price} desc={e.desc}/>)}
+        {filtered.map((item,i)=><Card  key={item.id} index={i} {...item}  />)}
         </div></PageWrapper>
        
     );

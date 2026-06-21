@@ -39,76 +39,7 @@ function Contact() {
 
         {/* Form */}
         <div className=" bg-gray-100 dark:bg-white/5 rounded-2xl p-6">
-          {submitted ? (
-            <div className="flex flex-col items-center justify-center h-full gap-4 text-center py-8">
-              <p className="text-4xl">🎉</p>
-              <h3 className="text-xl font-bold">Reservation Confirmed!</h3>
-              <p className="text-gray-500 dark:text-gray-400">We'll see you soon, {form.name}!</p>
-              <button
-                onClick={() => setSubmitted(false)}
-                className="mt-4 text-red-400 underline text-sm"
-              >
-                Make another reservation
-              </button>
-            </div>
-          ) : (
-            <>
-              <h3 className="text-xl font-bold mb-6">Reserve a Table</h3>
-              <div className="flex flex-col gap-4">
-                <div>
-                  <label className="text-gray-500 dark:text-gray-400 text-sm mb-1 block">Your Name</label>
-                  <input
-                    name="name"
-                    value={form.name}
-                    onChange={handleChange}
-                    placeholder="John Doe"
-                    className="w-full bg-gray-100 dark:bg-white/10 rounded-xl px-4 py-3 text-gray-900 dark:text-white placeholder-gray-500 outline-none focus:ring-2 focus:ring-red-400"
-                  />
-                </div>
-                <div>
-                  <label className="text-gray-500 dark:text-gray-400 text-sm mb-1 block">Email</label>
-                  <input
-                    name="email"
-                    value={form.email}
-                    onChange={handleChange}
-                    placeholder="john@email.com"
-                    className="w-full bg-gray-100 dark:bg-white/10 rounded-xl px-4 py-3 text-gray-900 dark:text-white placeholder-gray-500 outline-none focus:ring-2 focus:ring-red-400"
-                  />
-                </div>
-                <div className="grid grid-cols-2 gap-4">
-                  <div>
-                    <label className="text-gray-500 dark:text-gray-400 text-sm mb-1 block">Guests</label>
-                    <select
-                      name="guests"
-                      value={form.guests}
-                      onChange={handleChange}
-                      className="w-full bg-gray-100 dark:bg-white/10 rounded-xl px-4 py-3 text-gray-900 dark:text-white outline-none focus:ring-2 focus:ring-red-400"
-                    >
-                      {[1,2,3,4,5,6,7,8].map(n => (
-                        <option key={n} value={n} className="bg-[#111]">{n} {n === 1 ? 'Guest' : 'Guests'}</option>
-                      ))}
-                    </select>
-                  </div>
-                  <div>
-                    <label className="text-gray-500 dark:text-gray-400 text-sm mb-1 block">Date</label>
-                    <input
-                      type="date"
-                      name="date"
-                      value={form.date}
-                      onChange={handleChange}
-                      className="w-full bg-gray-100 dark:bg-white/10 rounded-xl px-4 py-3 text-gray-900 dark:text-white outline-none focus:ring-2 focus:ring-red-400"
-                    />
-                  </div>
-                </div>
-                <button
-                  onClick={handleSubmit}
-                  className="w-full bg-red-500 hover:bg-red-600 transition duration-300 rounded-xl py-3 font-semibold text-lg mt-2"
-                >
-                  Reserve Now
-                </button>
-              </div>
-            </>
-          )}
+          
         </div>
 
       </div>
