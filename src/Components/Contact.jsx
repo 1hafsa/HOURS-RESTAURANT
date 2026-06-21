@@ -39,7 +39,15 @@ function Contact() {
 
         {/* Form */}
         <div className=" bg-gray-100 dark:bg-white/5 rounded-2xl p-6">
-          
+          <iframe
+  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3397.0!2d-7.9811!3d31.6295!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xdafee8d96179e51%3A0x5950b6534f87adb8!2sMarrakech%2C%20Morocco!5e0!3m2!1sen!2sma!4v1700000000000!5m2!1sen!2sma"
+  width="100%"
+  height="100%"
+  style={{ border: 0, borderRadius: "12px", minHeight: "300px" }}
+  allowFullScreen=""
+  loading="lazy"
+  referrerPolicy="no-referrer-when-downgrade"
+/>
         </div>
 
       </div>

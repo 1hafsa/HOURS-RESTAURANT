@@ -36,7 +36,7 @@ function Hero() {
             onClick={() => setIsOpen(true)}
             className="bg-red-500 px-8 py-3 rounded-full hover:bg-red-600 transition duration-300 shadow-lg text-lg font-semibold"
           >
-            Order Now
+            Book a Table
           </button>
             </div>
         </main>
